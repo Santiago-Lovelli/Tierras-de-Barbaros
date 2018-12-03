@@ -1,0 +1,65 @@
+
+****** Recordar que para interrumpir la lista infinita se usa (ctrl+c) ******
+
+*Main> espada 5 dave
+Barbaro {nombre = "Dave", fuerza = 110, habilidades = ["tejer","escribirPoesia"], objetos = [<function>]}
+*Main> amuletoMistico "Cocinar" dave
+Barbaro {nombre = "Dave", fuerza = 100, habilidades = ["Cocinar","tejer","escribirPoesia"], objetos = [<function>]}
+*Main> varitaDefectuosa dave
+Barbaro {nombre = "Dave", fuerza = 100, habilidades = ["Hacer magia"], objetos = [<function>]}
+*Main> ardilla dave
+Barbaro {nombre = "Dave", fuerza = 100, habilidades = ["tejer","escribirPoesia"], objetos = [<function>]}
+*Main> megafono dave
+Barbaro {nombre = "Dave", fuerza = 100, habilidades = ["TEJERESCRIBIRPOESIA"], objetos = [<function>]}
+*Main> megafonoBarbarico dave
+Barbaro {nombre = "Dave", fuerza = 100, habilidades = ["TEJERESCRIBIRPOESIA"], objetos = [<function>]}
+*Main> invasionDeSuciosDuendes dave
+False
+*Main> cremalleraDelTiempo dave
+False
+*Main> cremalleraDelTiempo faffy
+True
+*Main> cremalleraDelTiempo astro
+True
+*Main> ritualDeFechorias dave
+True
+*Main> saqueo dave
+False
+*Main> gritoDeGuerra dave
+True
+*Main> caligrafia dave
+False
+*Main> ritualDeFechorias astro
+True
+*Main> saqueo astro
+False
+*Main> gritoDeGuerra astro
+True
+*Main> caligrafia astro
+True
+*Main> ritualDeFechorias faffy
+True
+*Main> saqueo faffy
+False
+*Main> gritoDeGuerra faffy
+True
+*Main> caligrafia faffy
+False
+*Main> sobrevivientes [invasionDeSuciosDuendes, cremalleraDelTiempo, ritualDeFechorias] [dave, astro, faffy]
+[Barbaro {nombre = "Astro", fuerza = 70, habilidades = ["Pasear","Levantar una piramide","Escribir poesia atroz"], objetos = [<function>]}]
+*Main> sobrevivientes [invasionDeSuciosDuendes, cremalleraDelTiempo, ritualDeFechorias] [dave, faffy]
+[]
+*Main> sobrevivientes [invasionDeSuciosDuendes, ritualDeFechorias] [dave, faffy]
+[]
+*Main> sobrevivientes [ritualDeFechorias] [dave, faffy]
+[Barbaro {nombre = "Dave", fuerza = 100, habilidades = ["tejer","escribirPoesia"], objetos = [<function>]},Barbaro {nombre = "Faffy", fuerza = 90, habilidades = ["robar"], objetos = [<function>]}]
+*Main> sinRepetidos [1,2,3,4,4,5,5,6,7]
+[1,2,3,4,5,6,7]
+*Main> sinRepetidos "casa"
+"csa"
+*Main> descendiente dave
+Barbaro {nombre = "Dave*", fuerza = 100, habilidades = ["tejer","escribirPoesia"], objetos = [<function>]}
+*Main> descendiente astro
+Barbaro {nombre = "Astro*", fuerza = 70, habilidades = ["PASEARLEVANTAR UNA PIRAMIDEESCRIBIR POESIA ATROZ"], objetos = [<function>]}
+*Main> descendientes dave
+[Barbaro {nombre = "Dave", fuerza = 100, habilidades = ["tejer","escribirPoesia"], objetos = [<function>]},Barbaro {nombre = "Dave*", fuerza = 100, habilidades = ["tejer","escribirPoesia"], objetos = [<function>]},Barbaro {nombre = "Dave**", fuerInterrupted.
